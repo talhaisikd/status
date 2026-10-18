@@ -1,31 +1,79 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# =============================================================================
+# Upptime configuration — Hammer Chat
+# Docs: https://upptime.js.org/docs/configuration
+#
+# Upptime runs entirely on GitHub infrastructure (Actions + Pages), so these
+# checks run from outside our own servers — by design.
+# =============================================================================
 
+# -----------------------------------------------------------------------------
+# Monitored sites
+# -----------------------------------------------------------------------------
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  # Marketing site + web app shell (includes the auth UI)
+  - name: Hammer Chat Web
+    url: https://hammerchat.website
 
+  # Backend API plane — nginx-exposed health of cc-db-server (port 3002)
+  - name: API Health
+    url: https://api.hammerchat.website/health
+
+  # DISABLED: BunnyCDN was retired from the platform (nginx is the CDN layer
+  # now; AGENTS.md is stale). chatcode-static.b-cdn.net still answers 403 at
+  # the root but is legacy — re-enable only if a real user-facing static
+  # domain is confirmed.
+  # - name: CDN (static assets)
+  #   url: https://chatcode-static.b-cdn.net
+  #   expectedStatusCodes:
+  #     - 200
+  #     - 403
+  #     - 404
+
+# -----------------------------------------------------------------------------
+# Status website — built by Upptime's workflows and served via GitHub Pages
+# -----------------------------------------------------------------------------
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  name: "Hammer Chat Status"
+  logoUrl: https://hammerchat.website/og-image.png
+  cname: status.hammerchat.website
+  theme: dark
+  introMessage: Live availability and incident history for Hammer Chat services. This page is monitored from outside our own infrastructure.
   navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - name: Status
+      link: /
+    - name: Docs
+      link: https://docs.hammerchat.website
+    - name: Hammer Chat
+      link: https://hammerchat.website
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# -----------------------------------------------------------------------------
+# Notifications
+# Notifications disabled by default — alerting policy requires explicit owner
+# approval before enabling.
+#
+# To enable: uncomment the block below, pick email vs. Slack/Discord/webhook
+# (all supported types are listed in the docs:
+# https://upptime.js.org/docs/notifications), and commit. No other change is
+# needed — the workflows read this file on every run.
+#
+# notifications:
+#   - type: email
+#     data:
+#       addresses:
+#         - contact@hammerchat.website
+#
+# Slack:
+#   - type: slack
+#     data:
+#       webhookUrl: https://hooks.slack.com/services/XXX/YYY/ZZZ
+#
+# Discord:
+#   - type: discord
+#     data:
+#       webhookUrl: https://discord.com/api/webhooks/XXX/YYY
+#
+# Generic webhook:
+#   - type: webhook
+#     data:
+#       url: https://example.com/upptime-hook
+# -----------------------------------------------------------------------------
