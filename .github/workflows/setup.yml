@@ -52,6 +52,7 @@ jobs:
         uses: upptime/uptime-monitor@v1.46.0
         with:
           command: "update-template"
+        continue-on-error: true
         env:
           GH_PAT: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
       - name: Update response time

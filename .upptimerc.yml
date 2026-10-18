@@ -9,6 +9,10 @@
 # -----------------------------------------------------------------------------
 # Monitored sites
 # -----------------------------------------------------------------------------
+# Repository identity — required by the upptime site generator (pre-process.ts)
+owner: talhaisikd
+repo: status
+
 sites:
   # Marketing site + web app shell (includes the auth UI)
   - name: Hammer Chat Web
