@@ -5,21 +5,22 @@
     "icon": "https://icons.duckduckgo.com/ip3/hammerchat.website.ico",
     "slug": "hammer-chat-web",
     "status": "down",
-    "uptime": "93.08%",
-    "uptimeDay": "64.54%",
-    "uptimeWeek": "91.40%",
-    "uptimeMonth": "93.08%",
-    "uptimeYear": "93.08%",
-    "time": 1047,
-    "timeDay": 977,
-    "timeWeek": 806,
-    "timeMonth": 1047,
-    "timeYear": 1047,
+    "uptime": "92.09%",
+    "uptimeDay": "49.20%",
+    "uptimeWeek": "89.21%",
+    "uptimeMonth": "92.09%",
+    "uptimeYear": "92.09%",
+    "time": 1263,
+    "timeDay": 2305,
+    "timeWeek": 1258,
+    "timeMonth": 1263,
+    "timeYear": 1263,
     "dailyMinutesDown": {
       "2026-10-19": 208,
       "2026-10-20": 355,
       "2026-11-01": 558,
-      "2026-10-31": 309
+      "2026-10-31": 309,
+      "2026-11-02": 221
     }
   },
   {
@@ -33,11 +34,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 578,
-    "timeDay": 603,
-    "timeWeek": 503,
-    "timeMonth": 578,
-    "timeYear": 578,
+    "time": 567,
+    "timeDay": 402,
+    "timeWeek": 488,
+    "timeMonth": 567,
+    "timeYear": 567,
     "dailyMinutesDown": {}
   }
 ]
