@@ -5,11 +5,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/hammerchat.website.ico",
     "slug": "hammer-chat-web",
     "status": "down",
-    "uptime": "87.32%",
+    "uptime": "86.81%",
     "uptimeDay": "0.00%",
-    "uptimeWeek": "70.11%",
-    "uptimeMonth": "87.32%",
-    "uptimeYear": "87.32%",
+    "uptimeWeek": "67.89%",
+    "uptimeMonth": "86.81%",
+    "uptimeYear": "86.81%",
     "time": 1573,
     "timeDay": 19316,
     "timeWeek": 3281,
@@ -21,7 +21,7 @@
       "2026-11-01": 558,
       "2026-10-31": 309,
       "2026-11-02": 397,
-      "2026-11-14": 347,
+      "2026-11-14": 571,
       "2026-11-13": 1440,
       "2026-11-12": 1226
     }
@@ -31,17 +31,19 @@
     "url": "https://api.hammerchat.website/health",
     "icon": "https://icons.duckduckgo.com/ip3/api.hammerchat.website.ico",
     "slug": "api-health",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 530,
-    "timeDay": 351,
-    "timeWeek": 454,
-    "timeMonth": 530,
-    "timeYear": 530,
-    "dailyMinutesDown": {}
+    "time": 529,
+    "timeDay": 438,
+    "timeWeek": 463,
+    "timeMonth": 529,
+    "timeYear": 529,
+    "dailyMinutesDown": {
+      "2026-11-14": 0
+    }
   }
 ]
